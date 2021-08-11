@@ -17,11 +17,11 @@ function random_number($length)
     return $text;
 }
 
-$user = 'root';
-$pass = '';
-$db = 'signup';
+$user = 'aksNqFtfwR';
+$pass = 's3BRhNUQXv';
+$db = 'aksNqFtfwR';
 
-if(! $database = new mysqli('localhost', $user , $pass, $db ))
+if(! $database = new mysqli('remotemysql.com', $user , $pass, $db ))
 {
     die("failed to connect");
 }
@@ -81,7 +81,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Sign up</h2>
-                        <form method="POST" class="register-form" id="register-form" action="http://localhost/website/signup.php">
+                        <form method="POST" class="register-form" id="register-form" action="signup.php">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="name" id="name" placeholder="Your Name"/>

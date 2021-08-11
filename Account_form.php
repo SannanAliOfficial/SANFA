@@ -1,9 +1,9 @@
 <?php   
-$ruser = 'root';
-$rpass = '';
-$rdb = 'signup';
+$ruser = 'aksNqFtfwR';
+$rpass = 's3BRhNUQXv';
+$rdb = 'aksNqFtfwR';
 
-if(! $rdatabase = new mysqli('localhost', $ruser , $rpass, $rdb ))
+if(! $rdatabase = new mysqli('remotemysql.com', $ruser , $rpass, $rdb ))
 {
     die("failed to connect");
 }
@@ -69,7 +69,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
         <script src="./../js/Account_form.js"></script>
 </head>
 <body>
-    <form action="http://localhost/website/Account_form.php" method="POST">
+    <form action="Account_form.php" method="POST">
         <img src="./../images/logo_banner.jpg" style="padding-left: 20px;">
         
         <fieldset>
