@@ -6,7 +6,7 @@
     $pass = 's3BRhNUQXv';
     $db = 'aksNqFtfwR';
     
-    if(! $database = new mysqli('remotemysql.com', $user , $pass, $db ))
+    if(! $database = mysqli_connect('remotemysql.com', $user , $pass, $db ))
     {
         die("failed to connect");
     }
@@ -17,7 +17,7 @@
 		$Account_number = $_POST['Account_number'];
 		$Password = $_POST['pass'];
 
-		if(!empty($Account_number) && !empty($Password) && is_numeric($Account_number))
+		if(!empty($Account_number) && !empty($Password))
 		{
 
 			//read from database
@@ -28,9 +28,12 @@
 			{
 				if($result && mysqli_num_rows($result) > 0)
 				{
-                    header("Location: personal.php");
-					die;
+                    $user_data = mysqli_fetch_assoc($result);
+					
+					
 				}
+                header("Location: personal.php");
+				die;
 			}
 			
 			echo "Invalid Account Number or Password!";

@@ -1,8 +1,37 @@
 <?php
-    
-	include("functions.php");
+$user = 'aksNqFtfwR';
+$pass = 's3BRhNUQXv';
+$db = 'aksNqFtfwR';
+     
+if(! $database = mysqli_connect('remotemysql.com', $user , $pass, $db ))
+{
+    die("failed to connect");
+}
 
-	$user_data = check_login($database);
+function check_login($database)
+{
+
+	if(isset($_SESSION['Account_number']))
+	{
+
+		$id = $_SESSION['Account_number'];
+		$query = "select * from users where Account_number = '$id' limit 1";
+
+		$result = mysqli_query($database,$query);
+		if($result && mysqli_num_rows($result) > 0)
+		{
+
+			$user_data = mysqli_fetch_assoc($result);
+			return $user_data;
+		}
+	}
+
+	//redirect to login
+	//header("Location: login.php");
+	//die;
+}
+
+$user_data = check_login($database);
 
 ?>
 
