@@ -1,4 +1,50 @@
+<?php
+    $user = 'aksNqFtfwR';
+    $pass = 's3BRhNUQXv';
+    $db = 'aksNqFtfwR';
+    
+    if(! $database = new mysqli('remotemysql.com', $user , $pass, $db ))
+    {
+        die("failed to connect");
+    }
 
+    if($_SERVER['REQUEST_METHOD'] == "POST")
+	{
+		//something was posted
+		$Account_number = $_POST['Account_number'];
+		$Password = $_POST['pass'];
+
+		if(!empty($Account_number) && !empty($Password) && is_numeric($Account_number))
+		{
+
+			//read from database
+			$query = "select * from users where Account_number = '$Account_number' limit 1";
+			$result = mysqli_query($con, $query);
+
+			if($result)
+			{
+				if($result && mysqli_num_rows($result) > 0)
+				{
+
+					$user_data = mysqli_fetch_assoc($result);
+					
+					if($user_data['pass'] === $Password)
+					{
+
+						$_SESSION['Account_number'] = $user_data['Account_number'];
+						header("Location: personal.php");
+						die;
+					}
+				}
+			}
+			
+			echo "Invalid Account Number or Password!";
+		}else
+		{
+			echo "Invalid Account Number or Password!";
+		}
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,11 +76,11 @@
                     <form method="POST" class="register-form" id="login-form">
                         <div class="form-group">
                             <label for="your_number"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                            <input type="text" name="your_number" id="your_number" placeholder="Your Account Number"/>
+                            <input type="text" name="Account_number" id="your_number" placeholder="Your Account Number"/>
                         </div>
                         <div class="form-group">
                             <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                            <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
+                            <input type="password" name="pass" id="your_pass" placeholder="Password"/>
                         </div>
                         <div class="form-group">
                             <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
