@@ -31,7 +31,6 @@
 					if($user_data['pass'] === $Password)
 					{
 
-						$_SESSION['Account_number'] = $user_data['Account_number'];
 						header("Location: personal.php");
 						die;
 					}
