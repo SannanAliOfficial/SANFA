@@ -19,7 +19,7 @@
 
 			//read from database
 			$query = "select * from users where Account_number = '$Account_number' limit 1";
-			$result = mysqli_query($con, $query);
+			$result = mysqli_query($database, $query);
 
 			if($result)
 			{
@@ -40,7 +40,7 @@
 			echo "Invalid Account Number or Password!";
 		}else
 		{
-			echo "Invalid Account Number or Password!";
+			echo "Invalid form of Account Number or Password!";
 		}
 	}
 ?>
