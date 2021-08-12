@@ -1,4 +1,7 @@
 <?php
+
+    include("function.php");
+
     $user = 'aksNqFtfwR';
     $pass = 's3BRhNUQXv';
     $db = 'aksNqFtfwR';
@@ -25,15 +28,8 @@
 			{
 				if($result && mysqli_num_rows($result) > 0)
 				{
-
-					$user_data = mysqli_fetch_assoc($result);
-					
-					if($user_data['pass'] === $Password)
-					{
-
-						header("Location: personal.php");
-						die;
-					}
+                    header("Location: personal.php");
+					die;
 				}
 			}
 			

@@ -1,3 +1,12 @@
+<?php
+    session_start();
+	include("functions.php");
+
+	$user_data = check_login($database);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,6 +56,7 @@
                         <img style="max-width:100px; margin-top: -7px;" src="./images/logo_img.jpg">
                        
                     </a>
+                    <div><b><?php echo $user_data['name']; ?></b></div>
                     <div class="navigation-row">
                         <nav id="navigation">
                             <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
@@ -112,7 +122,8 @@
                                             </div>
                                             <div class="thumb-inner animate" data-animate="fadeInUp">
                                                 <h4>Your Information</h4>
-                                                <p> </p>
+                                                <p><?php echo $user_data['name']; ?></p>
+                                                <p> <?php echo $user_data['Account_number']; ?> </p>
                                             </div>
                                         </a>
                                         </div>
