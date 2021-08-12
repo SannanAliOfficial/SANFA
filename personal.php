@@ -2,7 +2,7 @@
     
 	include("functions.php");
 
-	$user_data = check_lgin($database);
+	$user_data = check_login($database);
 
 ?>
 
