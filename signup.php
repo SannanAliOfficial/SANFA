@@ -21,10 +21,7 @@ $user = 'aksNqFtfwR';
 $pass = 's3BRhNUQXv';
 $db = 'aksNqFtfwR';
 
-if(! $database = new mysqli('remotemysql.com', $user , $pass, $db ))
-{
-    
-}
+
 
 if($_POST['pass'] != $_POST['re_pass']){
     die('Password does not match');

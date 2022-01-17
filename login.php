@@ -60,9 +60,7 @@
 
     <body style="padding-top: 30px">
 
-        <video autoplay muted loop id="myVideo">
-          <source src="images/3.mp4" type="video/mp4">
-        </video>
+        
         
         <!-- Sing in  Form -->
         <section class="sign-in">
