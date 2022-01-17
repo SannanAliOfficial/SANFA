@@ -165,7 +165,7 @@ a:hover {
           </table>
     </div>
     <div class="buttons">
-      <a href="popup.php"><button class="button">Want to give a REVIEW</button></a>
+      <a href="popup.php"><button class="button">Want to give a REVIEW to go back</button></a>
     </div>
    
     

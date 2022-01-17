@@ -73,15 +73,15 @@
         </select>
       </div>
        
-      <div class="g-recaptcha" data-sitekey="6LdcwBseAAAAAIiK0Jqjxt6SoGpPbgERS-um1XZe"></div>      
+            
 
       <div class="input-container">
         <input onclick="myFunction()" type="submit" value="Transfer" >
       </div>
 
     </form>
-    <div>
-      <a href="personal.php">Back Home</a>
+    <div class="input-contaner" style="padding-top: 830px; padding-left: 750px;">
+      <a href="personal.php" style="font-size: x-large;">Back Home</a>
     </div>
     <script>
       
