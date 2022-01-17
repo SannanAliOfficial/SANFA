@@ -56,8 +56,8 @@
                                     <li data-menuanchor="slide02"><a href="#slide02">About Us</a></li>
                                     <li data-menuanchor="slide03"><a href="#slide03">Services</a></li>
                                     <li data-menuanchor="slide04"><a href="#slide04">Our Shares</a></li>
-                                    <li data-menuanchor="slide05"><a href="#slide05"><b>Accounts</b></a></li>
-                                    <li data-menuanchor="slide06"><a href="#slide06">Portfolio</a></li>
+                                    <li data-menuanchor="slide05"><a href="#slide06"><b>Accounts</b></a></li>
+                                    
                                     <li data-menuanchor="slide07"><a href="#slide07">Contact Us</a></li>
                                 </ul>
                             </div>
@@ -352,49 +352,7 @@
                 </div>
             </div>
 
-            <div class="section animated-row" data-section="slide05">
-                <div class="section-inner">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 wide-col-laptop">
-                            <div class="title-block animate" data-animate="fadeInUp">
-                                <span>Portfolio</span>
-                                <h2>who are they?</h2>
-                            </div>
-                            <div class="col-md-8 offset-md-2">
-                                <div class="testimonials-section">
-                                    <div class="testimonials-slider owl-carousel">
-                                        
-                                        <div class="item animate" data-animate="fadeInUp">
-                                            <div class="testimonial-item">
-                                                <div class="client-row">
-                                                    <img src="images/fahad3.jpg" class="rounded-circle" alt="profile 1">
-                                                </div>
-                                                <div class="testimonial-content">
-                                                    <h4>Fahad Nasir</h4>
-                                                    <p>"Software Engineering <br> SE-19089" <br> </p>
-                                                    <span>“The way I see it, if you want the rainbow, you gotta put up with the rain.”</span>
-                                                </div>                                           
-                                            </div>
-                                        </div>
-                                        <div class="item animate" data-animate="fadeInUp">
-                                            <div class="testimonial-item">
-                                                <div class="client-row">
-                                                    <img src="images/sannan.jpg" class="rounded-circle" alt="profile 2">
-                                                </div>
-                                                <div class="testimonial-content">
-                                                    <h4>Syed Sannan Ali</h4>
-                                                    <p>"Software Engineering" <br> "SE-19085 " <br></p>
-                                                    <span>“Life is not a problem to be solved, but a reality to be experienced.”</span>
-                                                </div>                                           
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
 
             <div class="section animated-row" data-section="slide07">
                 <div class="section-inner">
@@ -416,7 +374,7 @@
                                             </div>
                                             <div class="contact-row">
                                                 <i class="fa fa-envelope"></i> fahadnasir118@gmail.com<br>
-                                                SyedSannanAli@gmail.com
+                                                SyedSannanAli@gmail.com <br> noorsidra594@gmail.com
                                             </div>
                                         </div>
                                     </div>
