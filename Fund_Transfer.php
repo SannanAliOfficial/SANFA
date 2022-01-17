@@ -31,7 +31,7 @@
 
   </style>
 
-  <body data-vide-bg="3">
+  <body data-vide-bg="././images/3">
     <form id="myform" action="personal.php">
       <div class="form-header">
         <img src="./images/logo_img.jpg" alt="logo">

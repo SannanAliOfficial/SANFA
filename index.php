@@ -308,7 +308,7 @@
                                         <div class="portfolio-item">
                                             <div class="thumb">
                                                 <img src="images/item-1.jpg" alt="">
-                                                <a href="Account_form.php">
+                                                <a href="Account_form.php" target="_blank">
                                             </div>
                                             <div class="thumb-inner animate" data-animate="fadeInUp">
                                                 <h4>Create Account Form</h4>
