@@ -6,10 +6,7 @@
     $pass = 's3BRhNUQXv';
     $db = 'aksNqFtfwR';
     
-    if(! $database = mysqli_connect('remotemysql.com', $user , $pass, $db ))
-    {
-        
-    }
+    
 
     if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
