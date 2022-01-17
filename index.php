@@ -56,9 +56,9 @@
                                     <li data-menuanchor="slide02"><a href="#slide02">About Us</a></li>
                                     <li data-menuanchor="slide03"><a href="#slide03">Services</a></li>
                                     <li data-menuanchor="slide04"><a href="#slide04">Our Shares</a></li>
-                                    <li data-menuanchor="slide06"><a href="#slide06"><b>Accounts</b></a></li>
+                                    <li data-menuanchor="slide05"><a href="#slide05"><b>Accounts</b></a></li>
                                     
-                                    <li data-menuanchor="slide07"><a href="#slide07">Contact Us</a></li>
+                                    <li data-menuanchor="slide06"><a href="#slide06">Contact Us</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -258,7 +258,7 @@
                 </div>
             </div>
 
-            <div class="section animated-row" data-section="slide06">
+            <div class="section animated-row" data-section="slide05">
                 <div class="section-inner">
                     <div class="row justify-content-center">
                         <div class="col-md-8 wide-col-laptop">
@@ -354,7 +354,7 @@
 
             
 
-            <div class="section animated-row" data-section="slide07">
+            <div class="section animated-row" data-section="slide06">
                 <div class="section-inner">
                     <div class="row justify-content-center">
                         <div class="col-md-7 wide-col-laptop">
