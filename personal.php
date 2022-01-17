@@ -190,7 +190,7 @@ $user_data = check_login($database);
                                     <div class="item animate" data-animate="fadeInUp">
                                         <div class="portfolio-item">
                                             <div class="thumb">
-                                                <img src="images/money.jpg" alt="">
+                                                <img src="images/money.png" alt="">
                                                 <a href="FundTransfer.php">
                                             </div>
                                             <div class="thumb-inner animate" data-animate="fadeInUp">

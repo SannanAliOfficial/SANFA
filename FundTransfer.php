@@ -80,6 +80,9 @@
       </div>
 
     </form>
+    <div>
+      <a href="personal.php">Back Home</a>
+    </div>
     <script>
       
       
