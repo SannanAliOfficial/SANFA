@@ -322,7 +322,7 @@
                                         <div class="portfolio-item">
                                             <div class="thumb">
                                                 <img src="images/money.jpg" alt="">
-                                                <a href="Fund_Transfer.php">
+                                                <a href="FundTransfer.php">
                                             </div>
                                             <div class="thumb-inner animate" data-animate="fadeInUp">
                                                 <h4>Funds Transfer</h4>
