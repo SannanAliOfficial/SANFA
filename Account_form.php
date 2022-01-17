@@ -5,7 +5,7 @@ $rdb = 'aksNqFtfwR';
 
 if(! $rdatabase = new mysqli('remotemysql.com', $ruser , $rpass, $rdb ))
 {
-    die("failed to connect");
+    
 }
 
 if($_SERVER['REQUEST_METHOD'] == "POST")

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #eeee;
+  font-family: 'Dongle', sans-serif;
+}
+
+form{
+  background: #fff;
+  opacity: 0.75;
+  padding: 40px;
+  width: 360px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 6px;
+}
+.form-header{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-header img{
+  height: 90px;
+}
+.form-header h1, .form-header h3{
+  margin: 10px;
+  font-weight:100 ;
+  
+}
+.input-container{
+  margin: 30px 0;
+
+}
+.input-container input{
+  height: 40px;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: solid 1px #ddd;
+}
+.input-container input:focus{
+  background: #e5e5e5;
+}
+.input-container select{
+  height: 40px;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: solid 1px #ddd;
+}
+.input-container select:focus{
+  background: #e5e5e5;
+}
+.input-container input[type="submit"]{
+  background: brown;
+  color: #fff;
+  cursor:pointer;
+  border: none;
+}
+.input-container input[type="submit"]:hover{
+  background: red;
+}
+
+.fb5 {
+	background-color: #db6600;
+	padding-left:6px;
+	padding-right:6px;
+	padding-top:3px;
+	padding-bottom:3px;	
+	color: #ffffff;
+	border:1px solid #db6600;
+	background-image: url(images/button_bg.jpg);
+}
+.fb5:hover {
+	background-color: #000000;	
+	border:1px solid #000000;
+	background-image: url(images/button_bg_over.jpg);
+}

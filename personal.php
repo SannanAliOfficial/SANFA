@@ -5,7 +5,7 @@ $db = 'aksNqFtfwR';
      
 if(! $database = mysqli_connect('remotemysql.com', $user , $pass, $db ))
 {
-    die("failed to connect");
+    
 }
 
 function check_login($database)
@@ -131,7 +131,7 @@ $user_data = check_login($database);
             
 
             <div class="section animated-row" data-section="slide02">
-                <div class="section-inner">
+            <div class="section-inner">
                     <div class="row justify-content-center">
                         <div class="col-md-8 wide-col-laptop">
                             <div class="title-block animate" data-animate="fadeInUp">
@@ -139,31 +139,48 @@ $user_data = check_login($database);
                                 <h2>Lets Explore what's waiting for you here</h2>
                             </div>
 
-                            
+                            <!-- -->
 
                             <div class="gallery-section">
                                 <div class="gallery-list owl-carousel">
                                     <div class="item animate" data-animate="fadeInUp">
                                         <div class="portfolio-item">
                                             <div class="thumb">
-                                                <img src="images/infof.jpg" alt="">
-                                                
+                                                <a href="signup.php" class="thumb">
+                                                <img src="images/item-1.jpg" alt="">
                                             </div>
                                             <div class="thumb-inner animate" data-animate="fadeInUp">
-                                                <h4>Your Information</h4>
-                                                <p><?php echo $user_data['name']; ?></p>
-                                                <p> <?php echo $user_data['Account_number']; ?> </p>
+                                                
+                                                <h4>SignUp</h4>
+                                                <p>"Here you can Sign Up with an email-password and be a member of Sanfa "</p>
+                                            </div>
+                                        </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- --> 
+                                
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            
+                                            <div class="thumb">
+                                                <a href="login.php">
+                                                <img src="images/item-3.jpg" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Login</h4>
+                                                <p>"If you are already a member, use that email-password and continue surfing through"</p>
                                             </div>
                                         </a>
                                         </div>
                                     </div>
                                 
-                                
+                                     <!-- -->
                                     <div class="item animate" data-animate="fadeInUp">
                                         <div class="portfolio-item">
                                             <div class="thumb">
                                                 <img src="images/item-1.jpg" alt="">
-                                                <a href="Account_form.php" target="_blank">
+                                                <a href="Account_form.php">
                                             </div>
                                             <div class="thumb-inner animate" data-animate="fadeInUp">
                                                 <h4>Create Account Form</h4>
@@ -173,12 +190,25 @@ $user_data = check_login($database);
                                         </div>
                                     </div>
                                     
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/money.jpg" alt="">
+                                                <a href="Fund_Transfer.php">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Funds Transfer</h4>
+                                                <p>Here you can transfer money to any bank or other banks </p>
+                                            </div>
+                                        </a>
+                                        </div>
+                                    </div>
                                     <!-- -->
                                     <div class="item animate" data-animate="fadeInUp">
                                         <div class="portfolio-item">
                                             <div class="thumb">
                                                 <img src="images/item-2.jpg" alt="">
-                                                <a href="">
+                                                <a href="transaction_history.php">
                                             </div>
                                             <div class="thumb-inner animate" data-animate="fadeInUp">
                                                 <h4>Transaction History</h4>
