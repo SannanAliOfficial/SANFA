@@ -17,11 +17,14 @@ function random_number($length)
     return $text;
 }
 
-$user = 'aksNqFtfwR';
-$pass = 's3BRhNUQXv';
-$db = 'aksNqFtfwR';
+$ruser = 'oGI7KynQVD';
+$rpass = 'xHUq8wkBis';
+$rdb = 'oGI7KynQVD';
 
-
+if(! $rdatabase = new mysqli('remotemysql.com', $ruser , $rpass, $rdb ))
+{
+    echo('No stable database connection');
+}
 
 if($_POST['pass'] != $_POST['re_pass']){
     die('Password does not match');
@@ -40,7 +43,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST")
     {
         $Account_number = random_number(16);
         $query = "insert into users (Account_number, Name, Email, Password, Re_Password) values('$Account_number','$Name', '$Email', '$Password', '$Re_Password')";
-        mysqli_query($database,$query);
+        mysqli_query($rdatabase,$query);
 
         header("Location: personal.php");
         die;      

@@ -3,6 +3,10 @@ $ruser = 'aksNqFtfwR';
 $rpass = 's3BRhNUQXv';
 $rdb = 'aksNqFtfwR';
 
+if(! $rdatabase = new mysqli('remotemysqli.com',$ruser, $rpass,$rdb))
+{
+    echo("no stable database connection");
+}
 
 
 if($_SERVER['REQUEST_METHOD'] == "POST")

@@ -1,11 +1,14 @@
 <?php
-$user = 'aksNqFtfwR';
-$pass = 's3BRhNUQXv';
-$db = 'aksNqFtfwR';
+$ruser = 'oGI7KynQVD';
+$rpass = 'xHUq8wkBis';
+$rdb = 'oGI7KynQVD';
      
+if(! $rdatabase = new mysqli('remotemysql.com', $ruser , $rpass, $rdb ))
+{
+    echo('No stable database connection');
+}
 
-
-function check_login($database)
+function check_login($rdatabase)
 {
 
 	if(isset($_SESSION['Account_number']))
@@ -14,7 +17,7 @@ function check_login($database)
 		$id = $_SESSION['Account_number'];
 		$query = "select * from users where Account_number = '$id' limit 1";
 
-		$result = mysqli_query($database,$query);
+		$result = mysqli_query($rdatabase,$query);
 		if($result && mysqli_num_rows($result) > 0)
 		{
 
@@ -28,7 +31,7 @@ function check_login($database)
 	//die;
 }
 
-$user_data = check_login($database);
+$user_data = check_login($rdatabase);
 
 ?>
 

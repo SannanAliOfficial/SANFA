@@ -2,11 +2,14 @@
 
     include("function.php");
 
-    $user = 'aksNqFtfwR';
-    $pass = 's3BRhNUQXv';
-    $db = 'aksNqFtfwR';
+    $ruser = 'oGI7KynQVD';
+    $rpass = 'xHUq8wkBis';
+    $rdb = 'oGI7KynQVD';
     
-    
+    if(! $rdatabase = new mysqli('remotemysql.com', $ruser , $rpass, $rdb ))
+    {
+        echo('No stable database connection');
+    }
 
     if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
@@ -19,7 +22,7 @@
 
 			//read from database
 			$query = "select * from users where Account_number = '$Account_number' limit 1";
-			$result = mysqli_query($database, $query);
+			$result = mysqli_query($rdatabase, $query);
 
 			if($result)
 			{
