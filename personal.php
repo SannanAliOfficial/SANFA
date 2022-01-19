@@ -246,7 +246,7 @@ $user_data = check_login($rdatabase);
                                             </div>
                                             <div class="contact-row">
                                                 <i class="fa fa-envelope"></i> fahadnasir118@gmail.com<br>
-                                                SyedSannanAli@gmail.com
+                                                SyedSannanAli@gmail.com <br> noorsidra594@gmail.com
                                             </div>
                                         </div>
                                     </div>
